@@ -1,0 +1,178 @@
+.things-head {
+  display: flex;
+  .left-section {
+    h2 {
+      font-size: 32px;
+      line-height: 41.98px;
+      color: #ffffff;
+      font-family: "Fira Code", monospace;
+      font-weight: 600;
+      span {
+        color: #c778dd;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 25px;
+      color: #abb2bf;
+      font-family: "Fira Code", monospace;
+      font-weight: 400;
+    }
+    input {
+      font-size: 16px;
+      line-height: 20.99px;
+      font-family: "Fira Code", monospace;
+      font-weight: 500;
+      padding: 8px 16px;
+      outline: none;
+      border: 1px solid #c778dd;
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      &:hover {
+        background: rgba(199, 120, 221, 0.2);
+      }
+    }
+  }
+  .right-section {
+    h4 {
+      padding: 8px 80px 8px 34px;
+      border: 1px solid #abb2bf;
+      font-size: 16px;
+      font-family: "Fira Code", monospace;
+      font-weight: 600;
+      line-height: 20.99px;
+      color: #abb2bf;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      span {
+        &:nth-child(1) {
+          background: #c778dd;
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          border: 1px solid #c778dd;
+        }
+        &:nth-child(2) {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Start of media
+
+@media screen and (max-width: 935px) {
+  .things-head {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (max-width: 935px) {
+  .things-head {
+    .right-section {
+      h4 {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        padding: 8px 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .things-head {
+    .right-section {
+      img {
+        width: 316px;
+        height: 260px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 345px) {
+  .things-head {
+    .right-section {
+      img {
+        height: -webkit-fill-available;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .things-head {
+    .left-section {
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 14px;
+      }
+      input {
+        font-size: 14px;
+        padding: 6px 14px;
+      }
+    }
+    .right-section {
+      h4 {
+        font-size: 14px;
+        padding: 6px 20px;
+        span {
+          &:nth-child(1) {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 210px) {
+  .things-head {
+    .left-section {
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      input {
+        font-size: 10px;
+        padding: 2px 10px;
+      }
+    }
+    .right-section {
+      h4 {
+        font-size: 12px;
+        padding: 4px 15px;
+        line-height: 15px;
+        span {
+          &:nth-child(1) {
+            width: 12px;
+            height: 12px;
+          }
+          &:nth-child(2) {
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 160px) {
+  .things-head {
+    .left-section {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+}

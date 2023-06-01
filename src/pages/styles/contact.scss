@@ -1,0 +1,132 @@
+.contact-div {
+  .title {
+    h2 {
+      font-size: 32px;
+      font-family: "Fira Code";
+      font-weight: 600;
+      color: #ffffff;
+      span {
+        color: #c778dd;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-family: "Fira Code";
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+  .content {
+    display: flex;
+    gap: 15%;
+    .text {
+      font-size: 16px;
+      font-family: "fira code";
+      color: #abb2bf;
+      font-weight: 500;
+    }
+    .cont {
+      padding: 16px;
+      border: 1px solid #abb2bf;
+      h3 {
+        font-size: 16px;
+        font-family: "fira code";
+        color: #ffffff;
+        font-weight: 600;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+        p {
+          font-size: 16px;
+          font-family: "Fira Code";
+          font-weight: 400;
+          color: #abb2bf;
+        }
+        svg {
+          font-size: 30px;
+          color: #abb2bf;
+        }
+      }
+    }
+  }
+  .media {
+    .logom {
+      h2 {
+        font-size: 32px;
+        font-family: "Fira Code";
+        font-weight: 500;
+        color: #ffffff;
+        span {
+          color: #c778dd;
+        }
+      }
+    }
+    .link {
+      svg {
+        font-size: 28px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+//  Start of media
+
+@media screen and (max-width: 780px) {
+  .contact-div {
+    .content {
+      flex-flow: column;
+      gap: 25px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .contact-div {
+    .content {
+      .cont {
+        padding: 13px;
+        a {
+          p {
+            &:nth-child(1) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 274px) {
+  .contact-div {
+    .title {
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .content {
+      .text {
+        p {
+          font-size: 12px;
+        }
+      }
+      .cont {
+        a {
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+    .media {
+      .logom {
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

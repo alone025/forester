@@ -1,0 +1,161 @@
+.footer_div {
+  gap: 0;
+  display: flex;
+  flex-flow: column;
+  margin-top: 150px;
+  background: transparent;
+  padding: 32px 170px;
+  border-top: 1px solid #abb2bf;
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text-tip {
+      .logo-tip {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          text-decoration: none;
+          color: #ffffff;
+          font-family: "Fira Code";
+          font-weight: 500;
+          h2 {
+            font-size: 16px;
+          }
+          p {
+            font-family: "Fira Code";
+            font-weight: 400;
+            color: #abb2bf;
+          }
+        }
+      }
+      .p-tip {
+        font-family: "Fira Code";
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    }
+    .link-tip {
+      .logo {
+        h3 {
+          font-family: "Fira Code";
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 24px;
+          margin: 0;
+          margin-bottom: 12px;
+        }
+      }
+      svg {
+        font-size: 32px;
+        color: #ffffff;
+        &:nth-child(3) {
+          margin-right: 8px;
+        }
+        &:nth-child(2) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .bottom-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    h3 {
+      font-size: 16px;
+      font-family: "Fira Code";
+      font-weight: 400;
+      color: #abb2bf;
+    }
+  }
+}
+
+// Start of media section
+
+@media screen and (max-width: 1195px) {
+  .footer_div {
+    padding: 28px 130px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .footer_div {
+    padding: 20px 90px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .footer_div {
+    padding: 15px 45px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .footer_div {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .footer_div {
+    .top-section {
+      display: flex;
+      flex-flow: column;
+      justify-content: unset;
+      align-items: flex-start;
+    }
+  }
+}
+@media screen and (max-width: 310px) {
+  .footer_div {
+    .top-section {
+      .text-tip {
+        .logo-tip {
+          a {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+        .p-tip {
+          font-size: 13px;
+        }
+      }
+      .link-tip {
+        .logo {
+          h3 {
+            font-size: 20px;
+          }
+        }
+        svg {
+          font-size: 25px;
+        }
+      }
+    }
+    .bottom-section {
+      h3 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 210px) {
+  .footer_div {
+    padding: 0 8px;
+    .top-section {
+      .text-tip {
+        .logo-tip {
+          a {
+            p {
+              font-size: 8.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

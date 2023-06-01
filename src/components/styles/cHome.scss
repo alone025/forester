@@ -1,0 +1,132 @@
+.chome-div {
+  .logo-chome {
+    font-size: 32px;
+    font-family: "Fira Code", monospace;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    h2 {
+      span {
+        color: #c778dd;
+      }
+    }
+    .line10 {
+      width: 250px;
+      height: 1px;
+      background: #c778dd;
+      margin-left: 16px;
+    }
+  }
+  .content-chome {
+    display: flex;
+    gap: 250px;
+    .left-section {
+      width: 55%;
+      p {
+        font-size: 16px;
+        font-family: "Fira Code";
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 1px;
+      }
+    }
+    .right-section {
+      border: 1px solid #abb2bf;
+      padding: 16px;
+      label {
+        font-size: 16px;
+        font-family: "Fira code";
+        font-weight: 500;
+        color: #ffffff;
+        letter-spacing: 0.8px;
+      }
+      a {
+        text-decoration: none;
+        color: #abb2bf;
+        .li {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          font-family: "Fira Code";
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+// Start of media section
+
+@media screen and (max-width: 1160px) {
+  .chome-div {
+    .content-chome {
+      display: flex;
+      flex-flow: column;
+      gap: 50px;
+      .left-section {
+        width: 100%;
+      }
+      .right-section {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .chome-div {
+    .logo-chome {
+      font-size: 24px;
+      .line10 {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 318px) {
+  .chome-div {
+    .logo-chome {
+      font-size: 20px;
+      .line10 {
+        width: 100%;
+      }
+    }
+    .content-chome {
+      .left-section {
+        p {
+          font-size: 13px;
+        }
+      }
+      .right-section {
+        padding: 13px;
+        label {
+          font-size: 13px;
+        }
+        a {
+          .li {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 230px) {
+  .chome-div {
+    .logo-chome {
+      font-size: 14px;
+    }
+    .content-chome {
+      .right-section {
+        a {
+          .gmail {
+            font-size: 8.5px;
+          }
+        }
+      }
+    }
+  }
+}

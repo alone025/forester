@@ -1,0 +1,164 @@
+$violet: #c778dd;
+$gray: #abb2bf;
+$white: #ffffff;
+
+@mixin display($type, $gap) {
+  display: $type;
+  flex-flow: row;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap;
+}
+
+@mixin text() {
+  color: #ffffff;
+  font-size: 32px;
+  font-family: "Fira Code";
+  font-weight: 600;
+}
+@mixin p($weight, $color) {
+  font-size: 16px;
+  font-family: "Fira Code";
+  font-weight: $weight;
+  color: $color;
+}
+
+.about-div {
+  gap: 70px;
+  .title {
+    h2 {
+      @include text();
+      span {
+        color: $violet;
+      }
+    }
+    p {
+      @include p(400, $white);
+    }
+  }
+  .content1 {
+    @include display(flex, 12%);
+  }
+  .c {
+    .content-2 {
+      @include display(flex, 12%);
+      .cards {
+        h2 {
+          @include p(600, $white);
+          border: 1px solid;
+          margin: 0;
+          padding: 8px;
+        }
+        p {
+          border: 1px solid;
+          margin: 0;
+          padding: 8px;
+        }
+      }
+    }
+    .content-3 {
+      @include display(flex, 60px);
+      .left-3 {
+        @include display(grid, 16px);
+        p {
+          border: 1px solid;
+          margin: 0;
+          padding: 8px;
+        }
+      }
+    }
+    .l {
+      h2 {
+        @include text();
+        span {
+          color: $violet;
+        }
+      }
+    }
+    h3,
+    p {
+      @include p(400, $gray);
+    }
+  }
+}
+
+// Media section ^_^
+
+@media screen and (max-width: 970px) {
+  .about-div {
+    .content1 {
+      flex-flow: column;
+      gap: 30px;
+    }
+    .c {
+      .content-2,
+      .content-3 {
+        flex-flow: column;
+        gap: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 578px) {
+  .about-div {
+    .c {
+      .right-1 {
+        img {
+          width: 100%;
+        }
+      }
+
+      .content-3 {
+        .left-3 {
+          grid-template-columns: auto;
+        }
+        .right-3 {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 200px) {
+  .about-div {
+    .title {
+      h2 {
+        font-size: 20px;
+        span {
+          color: $violet;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .c {
+      .content-2 {
+        .cards {
+          h2,
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .right-1 {
+        p {
+          font-size: 12px;
+        }
+      }
+      .l {
+        h2 {
+          font-size: 20px;
+          span {
+            color: $violet;
+          }
+        }
+      }
+      h3,
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

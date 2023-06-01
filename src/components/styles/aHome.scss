@@ -1,0 +1,116 @@
+.ahome-div {
+  .logo-ahome {
+    font-size: 32px;
+    font-family: "Fira Code";
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    h2 {
+      span {
+        color: #c778dd;
+      }
+    }
+    .line8 {
+      width: 250px;
+      height: 1px;
+      background: #c778dd;
+      margin-left: 16px;
+    }
+  }
+  .content-ahome {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    .left-section {
+      h3,
+      p {
+        font-size: 16px;
+        font-family: "Fira Code";
+        font-weight: 400;
+        line-height: 26px;
+        color: #abb2bf;
+      }
+      a {
+        text-decoration: none;
+        input {
+          font-size: 16px;
+          font-family: "Fira Code";
+          font-weight: 500;
+          color: #ffffff;
+          background: #282c33;
+          outline: none;
+          border: 1px solid #c778dd;
+          padding: 8px 16px;
+          transition: 0.2s;
+          &:hover {
+            cursor: pointer;
+            background: rgba(199, 120, 221, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Start of media section
+
+@media screen and (max-width: 1050px) {
+  .ahome-div {
+    .content-ahome {
+      display: flex;
+      flex-flow: column;
+      gap: 50px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .ahome-div {
+    .logo-ahome {
+      font-size: 24px;
+      .line8 {
+        width: 38%;
+      }
+    }
+    .content-ahome {
+      .left-section {
+        h3,
+        p {
+          font-size: 13px;
+        }
+        a {
+          input {
+            padding: 5px 13px;
+            font-size: 13px;
+          }
+        }
+      }
+      .right-section {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 240px) {
+  .ahome-div {
+    .logo-ahome {
+      font-size: 15px;
+    }
+    .content-ahome {
+      .left-section {
+        h3,
+        p {
+          font-size: 10px;
+        }
+        a {
+          input {
+            font-size: 11px;
+            padding: 3px 9px;
+          }
+        }
+      }
+    }
+  }
+}

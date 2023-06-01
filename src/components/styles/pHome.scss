@@ -1,0 +1,222 @@
+.project-home {
+  .logo-ph {
+    display: flex;
+    justify-content: space-between;
+    .text {
+      font-size: 32px;
+      color: #ffffff;
+      font-family: "Fira Code";
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      .line {
+        width: 500px;
+        height: 1px;
+        background: #c778dd;
+        margin-left: 15px;
+        border-radius: 15px;
+        border: none;
+      }
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Fira Code";
+        font-weight: 500;
+        color: #ffffff;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .card {
+      border: 1px solid #abb2bf;
+      width: fit-content;
+      p {
+        font-size: 16px;
+        font-family: "Fira Code";
+        font-weight: 400;
+        display: flex;
+        gap: 8px;
+        color: #abb2bf;
+        border: 1px solid;
+        padding: 8px;
+        margin-top: -2%;
+      }
+      h2 {
+        font-size: 24px;
+        font-family: "Fira Code";
+        font-weight: 500;
+        color: #ffffff;
+        padding: 16px 16px 0 16px;
+      }
+      h3 {
+        font-size: 16px;
+        font-family: "Fira Code";
+        font-weight: 400;
+        color: #abb2bf;
+        padding: 0px 16px;
+      }
+      .inputs {
+        display: flex;
+        gap: 15px;
+        padding: 0 16px 16px 16px;
+
+        a {
+          display: flex;
+          gap: 12px;
+          text-decoration: none;
+          input {
+            font-size: 16px;
+            font-family: "Fira Code";
+            font-weight: 500;
+            color: #ffffff;
+            padding: 8px 16px;
+            background: transparent;
+            border: 1px solid #c778dd;
+            outline: none;
+            transition: 0.3s;
+            &:hover {
+              cursor: pointer;
+              background: rgba(199, 120, 221, 0.2);
+            }
+            &:nth-child(2) {
+              border: 1px solid #abb2bf;
+              &:hover {
+                cursor: pointer;
+                background: rgba(171, 178, 191, 0.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media section ^_~
+
+@media screen and (max-width: 1268px) {
+  .project-home {
+    .logo-ph {
+      .text {
+        .line {
+          width: 300px;
+        }
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+  }
+}
+@media screen and (max-width: 810px) {
+  .project-home {
+    .logo-ph {
+      .text {
+        .line {
+          width: 180px;
+        }
+      }
+    }
+    .content {
+      gap: 40px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 710px) {
+  .project-home {
+    .logo-ph {
+      display: flex;
+      flex-flow: column;
+      .text {
+        font-size: 26px;
+        .line {
+          width: 100px;
+        }
+      }
+    }
+    .content {
+      gap: 40px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 355px) {
+  .project-home {
+    .logo-ph {
+      .text {
+        font-size: 20px;
+      }
+      .link {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: auto;
+      img {
+        width: 100%;
+      }
+      h2 {
+        padding: 12px 12px 0 12px;
+      }
+      h3 {
+        padding: 0 12px;
+      }
+      .inputs {
+        padding: 0 12px 12px 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 305px) {
+  .project-home {
+    .logo-ph {
+      .text {
+        h2 {
+          font-size: 19px;
+        }
+      }
+    }
+    .content {
+      .card {
+        h2 {
+          padding: 0;
+          font-size: 16px;
+        }
+        h3 {
+          padding: 0;
+          font-size: 12px;
+        }
+        .inputs {
+          padding: 0;
+          a {
+            display: flex;
+            flex-flow: column;
+            padding: 0 5px 5px 5px;
+          }
+        }
+      }
+    }
+  }
+}

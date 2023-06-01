@@ -1,0 +1,97 @@
+.shome_div {
+  .logo-shome {
+    font-size: 32px;
+    font-family: "Fira Code";
+    font-weight: 500;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    h2 {
+      span {
+        color: #c778dd;
+      }
+    }
+    .line {
+      width: 240px;
+      height: 1px;
+      background: #c778dd;
+      margin-left: 16px;
+    }
+  }
+  .content-shome {
+    display: flex;
+    gap: 60px;
+    .-right-section {
+      display: flex;
+      gap: 50px;
+      .second-card,
+      .third-card {
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+      }
+      .cards {
+        h2 {
+          font-size: 16px;
+          font-family: "Fira Code";
+          font-weight: 600;
+          color: #ffffff;
+          border: 1px solid;
+          padding: 8px;
+          margin: 0;
+        }
+        p {
+          font-size: 16px;
+          font-family: "Fira Code";
+          font-weight: 400;
+          color: #abb2bf;
+          padding: 8px;
+          line-height: 25px;
+          border: 1px solid;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+// Start of media section
+
+@media screen and (max-width: 900px) {
+  .shome_div {
+    .content-shome {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .shome_div {
+    .logo-shome {
+      font-size: 24px;
+      .line {
+        width: 100px;
+      }
+    }
+    .content-shome {
+      .left-section- {
+        img {
+          width: 100%;
+        }
+      }
+      .-right-section {
+        display: grid;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .shome_div {
+    .logo-shome {
+      font-size: 14px;
+    }
+  }
+}
