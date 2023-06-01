@@ -33,9 +33,15 @@ const Footer = () => {
           <div className="logo">
             <h3>{t("m")}</h3>
           </div>
-          <BsGithub />
-          <BsTelegram />
-          <SiOpencollective />
+          <Link to="https://github.com/alone025">
+            <BsGithub />
+          </Link>
+          <Link to="https://t.me/foresstest">
+            <BsTelegram />
+          </Link>
+          <Link to="https://opencollective.com/forester">
+            <SiOpencollective />
+          </Link>
         </div>
       </div>
       <div className="bottom-section">

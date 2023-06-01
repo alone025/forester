@@ -17,6 +17,7 @@ const Navbar = () => {
   // js codes =======
 
   const [isActive, setIsActive] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const handleClick = (event) => {
     // 👇️ toggle isActive state on click
@@ -35,10 +36,24 @@ const Navbar = () => {
     i18n.changeLanguage(e.target.value);
   };
 
+  const changeBackground = () => {
+    if (window.scrollY > 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   // ========== js codes
 
   return (
-    <div className="container navbar_div">
+    <div
+      className={
+        navbar ? "container navbar_div active" : "container navbar_div"
+      }
+    >
       <div className="nav-things">
         <Link to="/">
           <div className="logo-nav">
@@ -79,9 +94,15 @@ const Navbar = () => {
           </select>
           <div className="icons">
             <div className="chiziq"></div>
-            <BsGithub />
-            <BsTelegram />
-            <SiOpencollective />
+            <Link to="https://github.com/alone025">
+              <BsGithub />
+            </Link>
+            <Link to="https://t.me/foresstest">
+              <BsTelegram />
+            </Link>
+            <Link to="https://opencollective.com/forester">
+              <SiOpencollective />
+            </Link>
           </div>
         </div>
         <TbMenu className={isActive ? "active" : ""} onClick={handleClick} />

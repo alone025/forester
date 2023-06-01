@@ -52,14 +52,17 @@
           margin-bottom: 12px;
         }
       }
-      svg {
+      a {
         font-size: 32px;
-        color: #ffffff;
         &:nth-child(3) {
           margin-right: 8px;
         }
         &:nth-child(2) {
           margin-right: 8px;
+        }
+        svg {
+          font-size: 32px;
+          color: #ffffff;
         }
       }
     }

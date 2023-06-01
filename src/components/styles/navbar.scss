@@ -76,10 +76,13 @@
           left: -81px;
           top: -103px;
         }
-        svg {
-          display: flex;
-          font-size: 30px;
-          color: #d9d9d9;
+        a {
+          display: contents;
+          svg {
+            display: flex;
+            font-size: 30px;
+            color: #d9d9d9;
+          }
         }
       }
     }
@@ -87,6 +90,13 @@
       display: none;
     }
   }
+}
+.navbar_div.active {
+  position: fixed;
+  width: -webkit-fill-available;
+  background: #282c33;
+  transition: 0.2s;
+  z-index: 1;
 }
 
 // Start of media section

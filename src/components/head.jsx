@@ -1,4 +1,5 @@
 import "./styles/head.scss";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Head = () => {
@@ -16,7 +17,9 @@ const Head = () => {
             "He crafts responsive websites where technologies meet creativity"
           )}
         </p>
-        <input type="button" value={t("Contact me!!")} />
+        <Link to="/contact">
+          <input type="button" value={t("Contact me!!")} />
+        </Link>
       </div>
       <div className="right-section">
         <img
