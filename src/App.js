@@ -8,13 +8,14 @@ import {
   Project,
   About,
   Contact,
+  Loader,
 } from "../src/components/index";
 
 import "./i18n";
 
 const App = () => {
   return (
-    <Suspense fallback={<div>Loading ~~~</div>}>
+    <Suspense fallback={<Loader />}>
       <Router>
         <Navbar />
         <Routes>
