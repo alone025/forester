@@ -6,4 +6,4 @@ This project was created by Forester([alone025](https://github.com/alone025/)).
 
 ## [forestest.netlify.app](https://forestest.netlify.app)
 
-### "like" "support" "follow"
+###  `like` `support`  `follow`
