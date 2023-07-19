@@ -1,4 +1,4 @@
-##  **Personal portfolio **
+##  **Personal portfolio**
 
 __This project was created by Forester([alone025](https://github.com/alone025/)).__
 
