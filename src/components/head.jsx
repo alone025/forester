@@ -23,7 +23,7 @@ const Head = () => {
       </div>
       <div className="right-section">
         <img
-          src="https://github.com/alone025/aaaaaa/assets/127105897/5ff9d5d1-2be4-4bea-bed6-2586b834e618"
+          src="https://github.com/alone025/Animated_picture/assets/127105897/9d919b05-db01-4ac0-a1c3-c75292e2a12a"
           alt="Programmer"
         />
         <h4>
